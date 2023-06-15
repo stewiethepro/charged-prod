@@ -125,6 +125,7 @@ module.exports = (reportUri, reportOnly) => {
     'https://ajax.googleapis.com/ajax/libs/',
     'https://cdnjs.cloudflare.com/ajax/libs/',
     'https://res.cloudinary.com/vrlps/',
+    'https://getcharged.herokuapp.com/static/scripts/mapbox/'
   ]);
   const customConnectSrc = connectSrc.concat([
     'https://via.intercom.io',
