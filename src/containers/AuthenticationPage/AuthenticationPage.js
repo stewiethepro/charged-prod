@@ -147,7 +147,7 @@ export const AuthenticationForms = props => {
     {
       text: (
         <Heading as={!isLogin ? 'h1' : 'h2'} rootClassName={css.tab}>
-          <FormattedMessage id="AuthenticationPage.signupLinkText" />test change
+          <FormattedMessage id="AuthenticationPage.signupLinkText" />
         </Heading>
       ),
       selected: !isLogin,
