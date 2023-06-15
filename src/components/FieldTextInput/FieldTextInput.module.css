@@ -1,0 +1,12 @@
+.root {
+}
+
+.inputError {
+  border: var(--borderErrorField);
+}
+
+.description {
+  font-size: medium;
+  color: hsl(240 3% 60%);
+  margin-top: 0;
+}

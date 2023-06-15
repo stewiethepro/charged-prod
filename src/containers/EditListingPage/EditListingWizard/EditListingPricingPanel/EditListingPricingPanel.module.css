@@ -1,0 +1,21 @@
+@import '../../../../styles/customMediaQueries.css';
+.root {
+  flex-grow: 1;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  flex-grow: 1;
+}
+
+.priceCurrencyInvalid {
+  color: var(--colorFail);
+}
+
+.description {
+  margin-top: 0px;
+  margin-bottom: 60px;
+}
