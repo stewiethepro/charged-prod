@@ -277,12 +277,6 @@ const StripeConnectAccountFormComponent = props => {
           showVerificationNeeded
         } = fieldRenderProps;
 
-        console.log(
-          'stripeConnected: ', stripeConnected, 
-          'returnedAbnormallyFromStripe: ', returnedAbnormallyFromStripe,
-          'showVerificationNeeded: ', showVerificationNeeded
-        );
-
         const accountDataLoaded = stripeConnected && stripeAccountFetched && savedCountry;
         const submitInProgress = inProgress;
         const submitDisabled = pristine || invalid || disabled || submitInProgress;

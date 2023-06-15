@@ -464,9 +464,6 @@ class EditListingWizard extends Component {
     const accountId = stripeConnected ? stripeAccount.id : null;
     const stripeAccountData = stripeConnected ? getStripeAccountData(stripeAccount) : null;
 
-    console.log(stripeAccountData);
-    console.log(currentUser);
-
     const requirementsMissing =
       stripeAccount &&
       (hasRequirements(stripeAccountData, 'past_due') ||

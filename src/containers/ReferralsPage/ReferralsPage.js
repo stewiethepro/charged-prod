@@ -62,15 +62,13 @@ export const ReferralsPageComponent = props => {
   } : null  
 
   async function getViralLoopsData(user) {
-    console.log("flumpy");
     // Get campaign by ID
 
     const campaign = await ViralLoops.getCampaign(viralLoopsCampaignId);
-
-    console.log("campaign: ", campaign);
+    // console.log("campaign: ", campaign);
 
     // Identify user in campaign
-    console.log('[Viral Loops] Identifying...', user);
+    // console.log('[Viral Loops] Identifying...', user);
     const response = await campaign.identify(user).catch(error => {
     console.error("[Viral Loops] Participation error", error);
     });

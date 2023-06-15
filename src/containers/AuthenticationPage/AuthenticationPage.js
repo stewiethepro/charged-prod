@@ -477,15 +477,11 @@ export const AuthenticationPageComponent = props => {
       publicToken: viralLoopsCampaignId,
     })
 
-    console.log('body: ', body);
-
     const options = {
       method: 'POST',
       headers: {accept: 'application/json', 'content-type': 'application/json'},
       body
     };
-
-    console.log('options: ', options);
     
     fetch('https://app.viral-loops.com/api/v3/campaign/participant', options)
       .then(response => response.json())
@@ -493,34 +489,6 @@ export const AuthenticationPageComponent = props => {
       .catch(err => console.error(err));
 
   }
-
-  // async function participateInViralLoops(user) {
-
-  //   console.log('flumpy');
-
-  //   // Get campaign by ID
-  //   const campaign = await ViralLoops.getCampaign(viralLoopsCampaignId);
-  //   console.log("campaign: ", campaign);
-
-  //   const referrerResponse = await campaign.setReferrer(referrer)
-  //   console.log("referrerResponse: ", referrerResponse);
-
-  //   // Identify user in campaign
-  //   console.log('[Viral Loops] Identifying...', user);
-  //   const response = await campaign.identify(user)
-  //     .catch(error => {
-  //       console.error("[Viral Loops] Participation error", error);
-  //     });
- 
-  //   // Log response
-  //   if (response.isNew) {
-  //        console.log('[Viral Loops] ✅ Participation completed!');
-  //        console.log('VL response: ', response);
-  //   } else {
-  //        console.log('[Viral Loops] ✅ Identified participant!');
-  //        console.log('VL response: ', response);
-  //   }
-  // }
 
   if (currentUser) {
     // User object with first name, last name, and email
@@ -530,13 +498,11 @@ export const AuthenticationPageComponent = props => {
         email: currentUser.attributes.email
     };
 
-    console.log('viralLoopsUser: ', viralLoopsUser);
-
     // participateInViralLoops(viralLoopsUser, referrer);
     registerViralLoopsUser(viralLoopsUser, referrer);
 
   } else {
-    console.log('no user: ', currentUser);
+    console.log('no user');
   }
 
   return (
