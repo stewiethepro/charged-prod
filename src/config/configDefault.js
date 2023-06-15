@@ -21,7 +21,7 @@ const defaultConfig = {
   // Listing minimum price in currency sub units, e.g. cents.
   // 0 means no restriction to the price
   // Note: Stripe does have minimum fee that depends on country, currency, etc.
-  listingMinimumPriceSubUnits: 400,
+  listingMinimumPriceSubUnits: 300,
 
   // Marketplace name is needed for microcopy and in meta tags (bots and social media sharing reads those)
   marketplaceName: 'Charged',
