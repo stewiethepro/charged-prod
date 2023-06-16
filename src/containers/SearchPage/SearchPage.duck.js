@@ -128,7 +128,7 @@ export const searchListings = (searchParams, config) => (dispatch, getState, sdk
   };
 
   const datesSearchParams = datesParam => {
-    const searchTZ = 'Etc/UTC';
+    const searchTZ = 'Pacific/Auckland';
     const datesFilter = config.search.defaultFilters.find(f => f.key === 'dates');
     const values = datesParam ? datesParam.split(',') : [];
     const hasValues = datesFilter && datesParam && values.length === 2;
@@ -145,8 +145,8 @@ export const searchListings = (searchParams, config) => (dispatch, getState, sdk
     //   3) Make exact dates filtering against that specific time zone
     //   This setup would be better for dates filter,
     //   but it enforces a UX where location is always asked first and therefore configurability
-    const getProlongedStart = date => subtractTime(date, 14, 'hours', searchTZ);
-    const getProlongedEnd = date => addTime(date, 12, 'hours', searchTZ);
+    const getProlongedStart = date => subtractTime(date, 0, 'hours', searchTZ);
+    const getProlongedEnd = date => addTime(date, 0, 'hours', searchTZ);
 
     const startDate = hasValues ? parseDateFromISO8601(values[0], searchTZ) : null;
     const endRaw = hasValues ? parseDateFromISO8601(values[1], searchTZ) : null;

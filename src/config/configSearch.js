@@ -35,8 +35,8 @@ export const priceFilter = {
   schemaType: 'price',
   // Note: unlike most prices this is not handled in subunits
   min: 0,
-  max: 1000,
-  step: 5,
+  max: 20,
+  step: 1,
 };
 // // This is not in use by default.
 // // Needs more thinking how it should work together with main search.

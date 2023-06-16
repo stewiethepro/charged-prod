@@ -86,11 +86,12 @@ class DateRangeController extends Component {
     const { startDate, endDate } = values;
 
     const start = startDate ? startDate.toDate() : null;
-    const end = endDate ? endDate.toDate() : null;
+    // const end = endDate ? endDate.toDate() : null;
+    const end = endDate ? endDate.toDate() : start ? start : null;
 
     this.setState({ startDate, endDate });
 
-    if (startDate && endDate) {
+    if (startDate) {
       this.props.onChange({ startDate: start, endDate: end });
     }
   }
@@ -146,7 +147,8 @@ class DateRangeController extends Component {
     // Value given by Final Form reflects url params and is valid if both dates are set.
     // If only one date is selected state should be used to get the correct date.
     const startDate = isSelected ? startDateFromForm : startDateFromState;
-    const endDate = isSelected ? endDateFromForm : endDateFromState;
+    // const endDate = isSelected ? endDateFromForm : endDateFromState;
+    const endDate = isSelected ? endDateFromForm : startDate ? startDate : endDateFromState;
 
     return (
       <div className={classes}>
