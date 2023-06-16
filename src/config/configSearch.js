@@ -26,7 +26,7 @@ export const dateRangeFilter = {
   // Should the entire date range be available, or just part of it
   // Note: Since we don't enforce location search for dates filtering,
   //       we don't use API's 'time-full' in actual queries. It would require time zone info.
-  availability: 'time-full', // time-partial
+  availability: 'time-partial', // time-partial
   // Options: day/night. This affects counting and whether single day picking is possible.
   dateRangeMode: 'day',
 };
