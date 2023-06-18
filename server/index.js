@@ -89,6 +89,9 @@ app.use(
     // Issue tracker: https://issuetracker.google.com/issues/240387105
     crossOriginEmbedderPolicy: false,
     crossOriginOpenerPolicy: false,
+    referrerPolicy: {
+      policy: "origin",
+    },
   })
 );
 
