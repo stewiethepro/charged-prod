@@ -43,7 +43,7 @@
   left: 0px;
   height: calc(100% - 7px);
   width: 6px;
-  background-color: var(--colorBlack);
+  background-color: var(--marketplaceColor);
 }
 
 .menuHeading {
