@@ -125,7 +125,8 @@ module.exports = (reportUri, reportOnly) => {
     'https://ajax.googleapis.com/ajax/libs/',
     'https://cdnjs.cloudflare.com/ajax/libs/',
     'https://res.cloudinary.com/vrlps/',
-    'https://getcharged.herokuapp.com/static/scripts/mapbox/'
+    'https://getcharged.herokuapp.com/static/scripts/mapbox/',
+    'https://*.facebook.net'
   ]);
   const customConnectSrc = connectSrc.concat([
     'https://via.intercom.io',
@@ -150,6 +151,7 @@ module.exports = (reportUri, reportOnly) => {
     'https://uploads.intercomusercontent.com',
     'https://app.viral-loops.com/',
     'https://res.cloudinary.com/vrlps/',
+    'https://facebook.com',
   ]);
   const customChildSrc = childSrc.concat([
     'https://intercom-sheets.com',
