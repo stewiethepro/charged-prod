@@ -153,6 +153,7 @@ module.exports = (reportUri, reportOnly) => {
     'https://app.viral-loops.com/',
     'https://res.cloudinary.com/vrlps/',
     'https://www.facebook.com',
+    'https://cdn.linkedin.oribi.io/'
   ]);
   const customChildSrc = childSrc.concat([
     'https://intercom-sheets.com',
@@ -204,7 +205,8 @@ module.exports = (reportUri, reportOnly) => {
     'https://*.intercom-attachments-9.com',
     'https://static.intercomassets.eu',
     'https://static.au.intercomassets.com',
-    'https://www.facebook.com'
+    'https://www.facebook.com',
+    'https://px.ads.linkedin.com/'
   ]);
   const customStyleSrc = styleSrc.concat([
     'unsafe-inline',
