@@ -206,7 +206,7 @@ module.exports = (reportUri, reportOnly) => {
     'https://static.intercomassets.eu',
     'https://static.au.intercomassets.com',
     'https://www.facebook.com',
-    'https://px.ads.linkedin.com/'
+    'https://*.ads.linkedin.com/'
   ]);
   const customStyleSrc = styleSrc.concat([
     'unsafe-inline',
