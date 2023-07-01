@@ -402,7 +402,7 @@ export const AuthenticationPageComponent = props => {
   const showEmailVerification = !isLogin && currentUserLoaded && !user.attributes.emailVerified;
 
   // Already authenticated, redirect away from auth page
-  if (isAuthenticated && from) {
+  if (isAuthenticated && from && currentUserLoaded && !showEmailVerification) {
     return <Redirect to={from} />;
   } else if (isAuthenticated && currentUserLoaded && !showEmailVerification) {
     return <NamedRedirect name="LandingPage" />;
