@@ -143,7 +143,7 @@ const Footer = props => {
                   name="SearchPage"
                   to={{
                     search:
-                      '?address=Auckland%2C%20New%20Zealand&bounds=-36.545%2C175.298%2C-37.047%2C174.498',
+                      's?address=Auckland&bounds=-36.545%2C175.298%2C-37.047%2C174.498',
                   }}
                   className={css.link}
                 >
@@ -155,7 +155,7 @@ const Footer = props => {
                     name="SearchPage"
                     to={{
                       search:
-                        '?address=Central%20Auckland%2C%20New%20Zealand&bounds=-36.832855798989165%2C174.81968106374825%2C-36.93268050957636%2C174.70337348647865',
+                        '?address=Wellington&bounds=-41.237698%2C174.853385%2C-41.356092%2C174.705757',
                     }}
                     className={css.link}
                   >
@@ -167,7 +167,7 @@ const Footer = props => {
                     name="SearchPage"
                     to={{
                       search:
-                        '?address=North%20Auckland%2C%20New%20Zealand&bounds=-36.65600676268095%2C174.81799615740596%2C-36.83271770248426%2C174.66575084558633',
+                        '?address=Hamilton&bounds=-37.706988%2C175.36685%2C-37.837251%2C175.186262',
                     }}
                     className={css.link}
                   >
@@ -183,7 +183,7 @@ const Footer = props => {
                     name="SearchPage"
                     to={{
                       search:
-                        '?address=South%20Auckland%2C%20New%20Zealand&bounds=-36.933163293400156%2C174.9681796742587%2C-37.12110567276981%2C174.73326481238746',
+                        '?address=Christchurch&bounds=-43.417194%2C172.820244%2C-43.627801%2C172.485848',
                     }}
                     className={css.link}
                   >
@@ -195,7 +195,7 @@ const Footer = props => {
                     name="SearchPage"
                     to={{
                       search:
-                        '?address=East%20Auckland%2C%20New%20Zealand&bounds=-36.840274927208114%2C175.01694758359895%2C-36.9574082327617%2C174.82793825211343',
+                        '?address=Queenstown&bounds=-44.924308%2C168.919787%2C-45.104395%2C168.570971',
                     }}
                     className={css.link}
                   >
@@ -207,7 +207,7 @@ const Footer = props => {
                     name="SearchPage"
                     to={{
                       search:
-                        '?address=West%20Auckland%2C%20New%20Zealand&bounds=-36.783284510687636%2C174.696259580988%2C-36.97458112253792%2C174.57113092341842',
+                        '?address=Dunedin&bounds=-45.794285%2C170.77308%2C-45.934384%2C170.376199',
                     }}
                     className={css.link}
                   >

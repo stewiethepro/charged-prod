@@ -15,45 +15,80 @@ const defaultLocations = [
   {
     id: 'default-auckland',
     predictionPlace: {
-      address: 'Auckland, New Zealand',
+      address: 'Auckland',
       bounds: new LatLngBounds(new LatLng(-36.545, 175.298), new LatLng(-37.047,174.498)),
     },
   },
   {
-    id: 'default-auckland-central',
+    id: 'default-wellington',
     predictionPlace: {
-      address: 'Central Auckland, New Zealand',
-      bounds: new LatLngBounds(new LatLng(-36.832855798989165, 174.81968106374825), new LatLng(-36.93268050957636, 174.70337348647865)),
+      address: 'Wellington',
+      bounds: new LatLngBounds(new LatLng(-41.237698, 174.853385), new LatLng(-41.356092, 174.705757)),
     },
   },
   {
-    id: 'default-auckland-north',
+    id: 'default-hamilton',
     predictionPlace: {
-      address: 'North Auckland, New Zealand',
-      bounds: new LatLngBounds(new LatLng(-36.65600676268095, 174.81799615740596), new LatLng(-36.83271770248426, 174.66575084558633)),
+      address: 'Hamilton',
+      bounds: new LatLngBounds(new LatLng(-37.706988, 175.366850), new LatLng(-37.837251, 175.186262)),
     },
   },
   {
-    id: 'default-auckland-south',
+    id: 'default-christchurch',
     predictionPlace: {
-      address: 'South Auckland, New Zealand',
-      bounds: new LatLngBounds(new LatLng(-36.933163293400156, 174.9681796742587), new LatLng(-37.12110567276981, 174.73326481238746)),
+      address: 'Christchurch',
+      bounds: new LatLngBounds(new LatLng(-43.417194, 172.820244), new LatLng(-43.627801, 172.485848)),
     },
   },
   {
-    id: 'default-auckland-east',
+    id: 'default-queenstown',
     predictionPlace: {
-      address: 'East Auckland, New Zealand',
-      bounds: new LatLngBounds(new LatLng(-36.840274927208114, 175.01694758359895), new LatLng(-36.9574082327617, 174.82793825211343)),
+      address: 'Queenstown',
+      bounds: new LatLngBounds(new LatLng(-44.924308, 168.919787), new LatLng(-45.104395, 168.570971)),
     },
   },
   {
-    id: 'default-auckland-west',
+    id: 'default-dunedin',
     predictionPlace: {
-      address: 'West Auckland, New Zealand',
-      bounds: new LatLngBounds(new LatLng(-36.783284510687636, 174.696259580988), new LatLng(-36.97458112253792, 174.57113092341842)),
+      address: 'Dunedin',
+      bounds: new LatLngBounds(new LatLng(-45.794285, 170.773080), new LatLng(-45.934384, 170.376199)),
     },
   },
+  // {
+  //   id: 'default-auckland-central',
+  //   predictionPlace: {
+  //     address: 'Central Auckland, New Zealand',
+  //     bounds: new LatLngBounds(new LatLng(-36.832855798989165, 174.81968106374825), new LatLng(-36.93268050957636, 174.70337348647865)),
+  //   },
+  // },
+  // {
+  //   id: 'default-auckland-north',
+  //   predictionPlace: {
+  //     address: 'North Auckland, New Zealand',
+  //     bounds: new LatLngBounds(new LatLng(-36.65600676268095, 174.81799615740596), new LatLng(-36.83271770248426, 174.66575084558633)),
+  //   },
+  // },
+  // {
+  //   id: 'default-auckland-south',
+  //   predictionPlace: {
+  //     address: 'South Auckland, New Zealand',
+  //     bounds: new LatLngBounds(new LatLng(-36.933163293400156, 174.9681796742587), new LatLng(-37.12110567276981, 174.73326481238746)),
+  //   },
+  // },
+  // {
+  //   id: 'default-auckland-east',
+  //   predictionPlace: {
+  //     address: 'East Auckland, New Zealand',
+  //     bounds: new LatLngBounds(new LatLng(-36.840274927208114, 175.01694758359895), new LatLng(-36.9574082327617, 174.82793825211343)),
+  //   },
+  // },
+  // {
+  //   id: 'default-auckland-west',
+  //   predictionPlace: {
+  //     address: 'West Auckland, New Zealand',
+  //     bounds: new LatLngBounds(new LatLng(-36.783284510687636, 174.696259580988), new LatLng(-36.97458112253792, 174.57113092341842)),
+  //   },
+  // },
   // {
   //   id: 'default-helsinki',
   //   predictionPlace: {
