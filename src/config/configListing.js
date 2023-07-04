@@ -55,6 +55,9 @@ export const listingFields = [
       { option: 'type-1', label: 'Type 1' },
       { option: 'type-2', label: 'Type 2' },
       { option: 'tesla', label: 'Tesla' },
+      { option: 'commando', label: 'Commando' },
+      { option: 'chademo', label: 'ChadeMo' },
+      { option: 'ccs-sae', label: 'CCS/SAE' },
     ],
     filterConfig: {
       indexForSearch: true,
@@ -84,6 +87,10 @@ export const listingFields = [
       { option: '7.4', label: '7.4 kW' },
       { option: '11', label: '11 kW' },
       { option: '22', label: '22 kW' },
+      { option: '50', label: '50 kW' },
+      { option: '75', label: '75 kW' },
+      { option: '100', label: '100 kW' },
+      { option: '125', label: '125 kW' },
     ],
     filterConfig: {
       indexForSearch: true,
@@ -101,6 +108,32 @@ export const listingFields = [
       isRequired: true,
       requiredMessage: 'You need to select a power output.',
       // descriptionMessage:'If you plug your cable straight into a standard 3-pin wall socket then you can select 2.3 kW. If you\'ve had a dedicated home EV charger installed then it\'ll be between 3.7 kW and 22 kW.',
+    },
+  },
+  {
+    key: 'locationType',
+    scope: 'public',
+    schemaType: 'enum',
+    enumOptions: [
+      { option: 'home', label: 'Home' },
+      { option: 'business', label: 'Business' },
+      { option: 'public', label: 'Public' },
+    ],
+    filterConfig: {
+      indexForSearch: true,
+      label: 'Location Type',
+      group: 'secondary',
+    },
+    showConfig: {
+      label: 'Location Type',
+      isDetail: true,
+    },
+    saveConfig: {
+      label: 'Location Type',
+      placeholderMessage: 'Select location type...',
+      isRequired: true,
+      requiredMessage: 'You need to select a location type.',
+      // descriptionMessage:'Where is your charger located? If you want to describe it in more detail then you can use the listing description field above.',
     },
   },
   {
