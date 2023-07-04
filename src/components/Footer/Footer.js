@@ -69,7 +69,7 @@ const Footer = props => {
   const { siteHelpCentrePage } = config
   const classes = classNames(rootClassName || css.root, className);
 
-  const tallyChargerTypeRedirectLink = 'https://tally.so/r/nWr0kL?'
+  const tallyChargerTypeRedirectLink = 'https://tally.so/r/3lq86V?'
   const tallyCalculatorRedirectLink = 'https://tally.so/r/nWr02Q?'
 
   return (

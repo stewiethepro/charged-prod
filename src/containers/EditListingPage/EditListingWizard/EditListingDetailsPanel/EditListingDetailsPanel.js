@@ -209,7 +209,7 @@ const EditListingDetailsPanel = props => {
   const userId = currentUser.id.uuid
   const email = currentUser.attributes.email
   const name = currentUser.attributes.profile.firstName + ' ' + currentUser.attributes.profile.lastName
-  const tallyFormLink = 'https://tally.so/r/nWr0kL?'
+  const tallyFormLink = 'https://tally.so/r/3lq86V?'
   const queryString = 'user_id=' + userId + '&email=' + email + '&name=' + name
   const tallyRedirectLink = tallyFormLink + queryString
 
