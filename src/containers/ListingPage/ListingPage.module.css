@@ -50,7 +50,7 @@
   justify-content: space-between;
   width: 100%;
   color: var(--colorGrey100);
-  background-color: var(--colorGrey700);
+  background-color: var(--marketplaceColor);
   z-index: 1; /* bring on top of mobile image */
 
   /* Action bar prevents the image click events going to the parent and
@@ -88,6 +88,7 @@
 .ownListingText {
   composes: h5 from global;
   margin: 14px 12px 11px 24px;
+  color: var(--colorWhite);
 
   @media (--viewportMedium) {
     margin: 24px 12px 24px 24px;
@@ -95,7 +96,7 @@
 }
 
 .ownListingTextPendingApproval {
-  color: var(--colorAttention);
+  color: var(--colorWhite);
 }
 
 .closedListingText {
@@ -114,7 +115,7 @@
   flex-shrink: 0;
   margin: 0;
   padding: 14px 24px 11px 12px;
-  color: var(--colorGrey100);
+  color: var(--colorWhite);
 
   transition: var(--transitionStyleButton);
 
