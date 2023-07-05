@@ -24,6 +24,7 @@ import {
   StripeConnectAccountForm,
   UserNav,
   LayoutSideNavigation,
+  ExternalLink,
 } from '../../components';
 
 import TopbarContainer from '../../containers/TopbarContainer/TopbarContainer';
@@ -186,6 +187,16 @@ export const StripePayoutPageComponent = props => {
           <H3 as="h1" className={css.heading}>
             <FormattedMessage id="StripePayoutPage.heading" />
           </H3>
+          <p>
+            <FormattedMessage id="StripePayoutPage.description" />
+          </p>
+          <p>
+          Paying out money is strictly regulated under New Zealand law. Charged partners with&nbsp;
+          <ExternalLink key="linkToStripe" href={'https://stripe.com'}>
+            Stripe
+          </ExternalLink>
+          &nbsp;for secure financial services to ensure that we meet all of our legal obligations.
+          </p>
           {!currentUserLoaded ? (
             <FormattedMessage id="StripePayoutPage.loadingData" />
           ) : returnedAbnormallyFromStripe && !getAccountLinkError ? (

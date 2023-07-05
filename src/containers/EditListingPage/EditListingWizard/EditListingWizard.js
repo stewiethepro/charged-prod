@@ -313,27 +313,36 @@ class EditListingWizard extends Component {
     this.hasScrolledToTab = shouldScroll;
   }
 
+  // Make users onboard to stripe in order to publish their listing
+
+  // handlePublishListing(id) {
+  //   const { onPublishListingDraft, currentUser, stripeAccount } = this.props;
+
+  //   const stripeConnected =
+  //     currentUser && currentUser.stripeAccount && !!currentUser.stripeAccount.id;
+
+  //   const stripeAccountData = stripeConnected ? getStripeAccountData(stripeAccount) : null;
+
+  //   const requirementsMissing =
+  //     stripeAccount &&
+  //     (hasRequirements(stripeAccountData, 'past_due') ||
+  //       hasRequirements(stripeAccountData, 'currently_due'));
+
+  //   if (stripeConnected && !requirementsMissing) {
+  //     onPublishListingDraft(id);
+  //   } else {
+  //     this.setState({
+  //       draftId: id,
+  //       showPayoutDetails: true,
+  //     });
+  //   }
+  // }
+
+  // Let users publish without onboarding to Stripe
+
   handlePublishListing(id) {
     const { onPublishListingDraft, currentUser, stripeAccount } = this.props;
-
-    const stripeConnected =
-      currentUser && currentUser.stripeAccount && !!currentUser.stripeAccount.id;
-
-    const stripeAccountData = stripeConnected ? getStripeAccountData(stripeAccount) : null;
-
-    const requirementsMissing =
-      stripeAccount &&
-      (hasRequirements(stripeAccountData, 'past_due') ||
-        hasRequirements(stripeAccountData, 'currently_due'));
-
-    if (stripeConnected && !requirementsMissing) {
       onPublishListingDraft(id);
-    } else {
-      this.setState({
-        draftId: id,
-        showPayoutDetails: true,
-      });
-    }
   }
 
   handlePayoutModalClose() {
