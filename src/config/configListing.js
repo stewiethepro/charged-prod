@@ -58,6 +58,8 @@ export const listingFields = [
       { option: 'commando', label: 'Commando' },
       { option: 'chademo', label: 'ChadeMo' },
       { option: 'ccs-sae', label: 'CCS/SAE' },
+      { option: 'wall-plug', label: 'Wall Plug' },
+      { option: 'caravan-plug', label: 'Caravan Plug' },
     ],
     filterConfig: {
       indexForSearch: true,
